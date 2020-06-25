@@ -5,3 +5,6 @@
 - https://github.com/microsoft/vscode-go/issues/3087
   - https://github.com/golang/vscode-go/issues/146
 - https://qiita.com/fox777/items/a8cb025df5439902b6c4
+
+# 疑問
+- 型変換はなんのためにあるの？

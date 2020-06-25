@@ -1,28 +1,21 @@
 package main
 
-import (
-	"fmt"
-	"unicode/utf8"
-)
+import "fmt"
 
 func main() {
-	var isTrue bool = true
+	type myInteger int
 
-	fmt.Println(isTrue)
+	var i myInteger = 12345
 
-	var i int = 12345
-	var int64 int64 = int64(i)
+	fmt.Println(i)
 
-	fmt.Println(int64)
+	type myStruct struct {
+		a int
+		b int
+	}
 
-	var str string = "あいうえ"
-	str += "お"
+	var integer int = 12345
+	var str string = string(integer)
 
 	fmt.Println(str)
-
-	var en string = "golang"
-	var ja string = "Go言語"
-
-	fmt.Println(en, " length: ", len(en))
-	fmt.Println(ja, " length: ", utf8.RuneCountInString(ja))
 }
