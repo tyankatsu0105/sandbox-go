@@ -2,32 +2,39 @@ package main
 
 import "fmt"
 
-// type myType int
-
-// func (value myType) println() {
-// 	fmt.Println(value)
-// }
-
-// func main() {
-// 	var z myType = 12345
-
-// 	z.println()
-// }
-
-type Person struct {
-	name string
-	age  int
+// Greeter comment 入れないとエラーになる
+type Greeter interface {
+	Greet(name string) string
 }
 
-func (person Person) greet() {
-	fmt.Println("Hello" + person.name)
+// Male 男性
+type Male struct {
+	name string
+}
+
+// Female 女性
+type Female struct {
+	name string
+}
+
+func (sex Male) Greet(name string) string {
+	return "こんにちは！！" + name + "くん！！"
+}
+func (sex Female) Greet(name string) string {
+	return "こんにちは！！" + name + "ちゃん！！"
 }
 
 func main() {
-	person := Person{
-		name: "tyankatsu",
-		age:  26,
-	}
+	var grt Greeter
 
-	person.greet()
+	var male Male
+	var female Female
+
+	grt = male
+
+	fmt.Println(grt.Greet("tyankatsu"))
+
+	grt = female
+
+	fmt.Println(grt.Greet("tyankatsu"))
 }

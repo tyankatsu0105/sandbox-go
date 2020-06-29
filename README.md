@@ -18,5 +18,8 @@
 ## nil
 - [nullとnilの違い \- 紺屋高尾](http://kouyatakao.hatenablog.com/entry/2013/12/30/135026)
 
+## interface
+- [初心者に送りたいinterfaceの使い方\[Golang\] \- Since I want to start “blog” that looks like men do, I do start\. \- Medium](https://medium.com/since-i-want-to-start-blog-that-looks-like-men-do/%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E9%80%81%E3%82%8A%E3%81%9F%E3%81%84interface%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-golang-48eba361c3b4)
+
 # 疑問
 - 型変換はなんのためにあるの？
