@@ -33,6 +33,13 @@
 
 - [Go の array と slice を理解するときがきた \- Qiita](https://qiita.com/seihmd/items/d9bc98a4f4f606ecaef7)
 
+
+## iota
+- [Golangのconst識別子iotaの紹介 \- Qiita](https://qiita.com/curepine/items/2ae2f6504f0d28016411)
+
+## Tips
+- [他言語から来た人がGoを使い始めてすぐハマったこととその答え \- Qiita](https://qiita.com/mumoshu/items/0d2f2a13c6e9fc8da2a4)
+- [Go Tips 101 \- Go 101: an online Go programming book \+ knowledge base](https://go101.org/article/tips.html)
 # 疑問
 
 - 型変換はなんのためにあるの？
