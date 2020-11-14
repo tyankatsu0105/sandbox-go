@@ -8,6 +8,7 @@
 - [Error installing tools when using Go version managers \(asdf\-vm\) · Issue \#3087 · microsoft/vscode\-go](https://github.com/microsoft/vscode-go/issues/3087)
   - [all: cleanup use of \`go\.goroot\` · Issue \#146 · golang/vscode\-go](https://github.com/golang/vscode-go/issues/146)
 - [【golang 環境構築】Modules で package 管理をする \- Qiita](https://qiita.com/fox777/items/a8cb025df5439902b6c4)
+- [GOPATH モードからモジュール対応モードへ移行せよ \- Qiita](https://qiita.com/spiegel-im-spiegel/items/5cb1587cb55d6f6a34d7)
 
 ## 全体
 
