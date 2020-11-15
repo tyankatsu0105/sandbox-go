@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    tty: true
+    build:
+      context: .
+      args: 
+        APP_NAME: $APP_NAME
+        WORKDIR: $WORKDIR
+    volumes:
+      - .:${WORKDIR}

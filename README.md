@@ -1,3 +1,14 @@
+# docker
+
+## env
+[docker\-composeから環境変数をDockerfileに渡す方法 \- Qiita](https://qiita.com/Targityen/items/2717511ca9f12c1c667f)
+dockerにわたす環境変数は
+.env => docker-compose.yml内で${}
+.env => docker-compose.ymlでargsに渡す => Dockerfile内でARGにキー名を渡して${}
+
+## マルチステージビルド
+[マルチステージビルドの利用 \| Docker ドキュメント](https://matsuand.github.io/docs.docker.jp.onthefly/develop/develop-images/multistage-build/)
+
 # 参考
 
 ## 開発環境
