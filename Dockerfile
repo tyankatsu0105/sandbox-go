@@ -9,7 +9,7 @@ ARG APP_NAME
 # -----------------------
 WORKDIR $WORKDIR
 COPY main.go .
-RUN CGO_ENABLED=0 go build
+RUN CGO_ENABLED=0 go build -o $APP_NAME
 
 
 ###############################
