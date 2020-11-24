@@ -1,6 +1,10 @@
 version: '3'
 services:
   app:
+    environment:
+      - PROJECT_ID
+      - VERSION
+    image: gcr.io/${PROJECT_ID}/hello-app:${VERSION}
     tty: true
     build:
       context: .
