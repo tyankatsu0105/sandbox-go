@@ -1,18 +1,27 @@
 version: '3'
 services:
   app:
-    environment:
-      - PROJECT_ID
-      - VERSION
-    image: gcr.io/${PROJECT_ID}/hello-app:${VERSION}
     tty: true
     build:
       context: .
       args: 
         APP_NAME: $APP_NAME
         WORKDIR: $WORKDIR
-        PORT: $PORT
+        PORT: $APP_PORT
     ports:
-      - "${PORT}:${PORT}"
+      - "${APP_PORT}:${APP_PORT}"
+    depends_on:
+      - db
     volumes:
       - .:${WORKDIR}
+
+  db:
+    image: postgres:13-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - "./data/db:/var/lib/postgresql/data"
+      - ./data/db/init:/docker-entrypoint-initdb.d
