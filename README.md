@@ -21,3 +21,7 @@ dockerにわたす環境変数は
 - [【golang 環境構築】Modules で package 管理をする \- Qiita](https://qiita.com/fox777/items/a8cb025df5439902b6c4)
 - [GOPATH モードからモジュール対応モードへ移行せよ \- Qiita](https://qiita.com/spiegel-im-spiegel/items/5cb1587cb55d6f6a34d7)
 
+## test
+- [go test する時にサブディレクトリ込みでテストをまとめて実行する方法 \| さにあらず](https://blog.satotaichi.info/running-go-test-recursively/)
+- [go test \-v \./\.\.\.](https://qiita.com/tmzkysk/items/8bb37795ac223664d682)
+  - `go test -v ./...`
